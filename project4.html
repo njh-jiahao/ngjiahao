@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Structure Prediction & Docking | Jia Hao Ng</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script>
+        function togglePhase(button) {
+            const phase = button.parentElement;
+            const content = phase.querySelector('.phase-content');
+            const icon = button.querySelector('i');
+            
+            // Toggle display
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            
+            // Rotate icon
+            icon.style.transform = content.style.display === 'none' ? 'rotate(0deg)' : 'rotate(180deg)';
+            
+            // Adjust margin when closed
+            phase.style.marginBottom = content.style.display === 'none' ? '1rem' : '3rem';
+        }
+        
+        // Close all by default on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const contents = document.querySelectorAll('.phase-content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="images/DP.JPG" alt="Jia Hao Ng" class="profile-pic">
+                <div class="header-text">
+                    <h1><a href="index.html">Jia Hao Ng</a></h1>
+                    <p class="subtitle">Bioinformatics & Data Science</p>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#education">Education</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main class="project-detail">
+            <h2>Protein Structure Prediction & Molecular Docking Analysis</h2>
+            <p class="project-meta">Academic Project • Universiti Malaya • 2023</p>
+            
+            <div class="project-content">
+                <h3>Overview</h3>
+                <p>A comprehensive bioinformatics pipeline was developed for protein structure prediction. It includes homology modelling, molecular dynamics simulation using GROMACS, and molecular docking analysis with AutoDock. This pipeline was utilised for identifying potential binding sites and ligand interactions.</p>
+                
+                <div class="project-phases">
+                    <!-- Protein Structure Prediction -->
+                    <div class="phase">
+                        <div class="phase">
+                            <button class="phase-header" onclick="togglePhase(this)">
+                                <h3>1. Protein Structure Prediction (Modeller)</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="phase-content">
+                                <div class="phase-step">
+                                    <h4>Templates Identification</h4>
+                                    <p>Identified suitable template structures from PDB database for homology modeling</p>
+                                    <img src="images/CADDtemplates.png" alt="Template identification" style="height: 250px;">
+                                </div>
+                                <div class="phase-step">
+                                    <h4>Model Building</h4>
+                                    <ul>
+                                        <li><strong>salign.py</strong>: Multiple sequence alignment of templates</li>
+                                        <li><strong>align2d.py</strong>: Query-template alignment</li>
+                                        <li><strong>model_mult.py</strong>: 3D homology model generation</li>
+                                    </ul>
+                                    <img src="images/CADDmodel-building.png" alt="Model building process" style="height: 150px;">
+                                </div>
+                                <div class="phase-step">
+                                    <h4>Model Validation</h4>
+                                    <p>Evaluated model quality using Ramachandran plots and GNU plot analysis</p>
+                                    <img src="images/CADD_GNUplot.png" alt="Ramachandran plot" style="height: 360px;">
+                                    <img src="images/CADDramachandran.png" alt="Ramachandran plot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Molecular Simulation -->
+                    <div class="phase">
+                        <button class="phase-header" onclick="togglePhase(this)">
+                            <h3>2. Molecular Simulation (GROMACS)</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="phase-content">
+                            <div class="phase-step">
+                                <h4>System Preparation</h4>
+                                <ul>
+                                    <li>Added force field parameters (AMBER99SB-ILDN)</li>
+                                    <li>Solvated system in TIP3P water model</li>
+                                    <li>Neutralized system with ions</li>
+                                </ul>
+                                <img src="images/CADDsolvation.png" alt="System solvation" style="height: 300px;">
+                            </div>
+                            <div class="phase-step">
+                                <h4>Energy Minimization</h4>
+                                <p>Performed steepest descent algorithm to remove steric clashes</p>
+                                <img src="images/CADDenergy-min.png" alt="Energy minimization" style="height: 280px;">
+                            </div>
+                            <div class="phase-step">
+                                <h4>Production Run</h4>
+                                <p>Executed 5ns molecular dynamics simulation (2,500,000 steps)</p>
+                            </div>
+                            <div class="phase-step">
+                                <h4>Simulation Analysis</h4>
+                                <p>Evaluated stability using RMSD and RMSF metrics</p>
+                                <img src="images/CADD_RMSD.png" alt="RMSD analysis" style="height: 240px;">
+                                <img src="images/CADD_RMSF.png" alt="RMSF analysis" style="height: 240px;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Molecular Docking -->
+                    <div class="phase">
+                        <button class="phase-header" onclick="togglePhase(this)">
+                            <h3>3. Molecular Docking (AutoDock)</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="phase-content">
+                            <div class="phase-step">
+                                <h4>System Preparation</h4>
+                                <ul>
+                                    <li>Converted frame with lowest energy level to PDB format</li>
+                                    <li>Prepared protein and ligand in PDBQT format</li>
+                                </ul>
+                                <img src="images/CADDdocking-prep.png" alt="Docking preparation" style="height: 240px;">
+                                <img src="images/CADD-PDBQT.png" alt="PDBQT preparation">
+
+                            </div>
+                            <div class="phase-step">
+                                <h4>AutoGrid Setup</h4>
+                                <p>Generated grid maps for binding affinity evaluation</p>
+                                <img src="images/CADDautogrid.png" alt="AutoGrid setup" style="height: 240px;">
+                            </div>
+                            <div class="phase-step">
+                                <h4>Docking Analysis</h4>
+                                <ul>
+                                    <li>Predicted binding modes and energies</li>
+                                    <li>Identified potential binding sites</li>
+                                    <li>Visualized interactions in Chimera and LigPlot</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Key Findings</h3>
+                <div class="findings">
+                    <div class="finding">
+                        <img src="images/CADDbinding-site.png" alt="Primary binding site" style="height: 240px;">
+                        <p>Identified primary binding site with strong interaction energy</p>
+                    </div>
+                    <div class="finding">
+                        <img src="images/CADDligand-interactions.png" alt="Ligand interactions" style="height: 240px;">
+                        <p>Detailed hydrogen bonding and hydrophobic interactions analysis</p>
+                    </div>
+                </div>
+                
+                <h3>Tools Used</h3>
+                <div class="tech-tags">
+                    <span class="tag">Modeller</span>
+                    <span class="tag">GROMACS</span>
+                    <span class="tag">AutoDock</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Chimera</span>
+                    <span class="tag">LigPlot</span>
+                </div>
+                
+                <a href="index.html#projects" class="button back-button">← Back to Projects</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Jia Hao Ng. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindromic Sequence Analysis | Jia Hao Ng</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="images/DP.JPG" alt="Jia Hao Ng" class="profile-pic">
+                <div class="header-text">
+                    <h1><a href="index.html">Jia Hao Ng</a></h1>
+                    <p class="subtitle">Bioinformatics & Data Science</p>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#education">Education</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main class="project-detail">
+            <h2>Palindromic Sequence Analysis Web System</h2>
+            <p class="project-meta">Python + Web System • Universiti Malaya • 2023-2024</p>
+            
+            <div class="project-content">
+                <h3>Overview</h3>
+                <p>This web-based application was designed to identify and analyze palindromic DNA sequences from user-provided nucleotide strings. Palindromic sequences are biologically significant as they play roles in gene regulation, restriction enzyme recognition, and genome stability. The system offers a user-friendly interface to support bioinformatics learning and research, particularly in sequence analysis.</p>
+                
+                <h3>System Components</h3>
+                <div class="system-components">
+                    <div class="component">
+                        <h4>Palindrome Detection</h4>
+                        <p>Implemented efficient algorithms to scan DNA sequences for:</p>
+                        <ul>
+                            <li>Standard palindromes (immediate reverse complements)</li>
+                            <li>Spacer palindromes (reverse complements separated by configurable lengths)</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <h4>Input Handling and Validation</h4>
+                        <p>Robust input validation including:</p>
+                        <ul>
+                            <li>DNA sequence purity checks (ACGT characters only)</li>
+                            <li>FASTA file format verification</li>
+                            <li>Whitespace stripping</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <h4>Output Rendering</h4>
+                        <p>Results displayed in a structured, readable format with:</p>
+                        <ul>
+                            <li>Highlighted palindromic regions and their coordinates</li>
+                            <li>Detailed summary of palindrome types and counts</li>
+                            <li>Error messages for invalid or ambiguous inputs</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <h4>Modular Design and Extensibility</h4>
+                        <p>Designed with future scalability in mind, allowing for:</p>
+                        <ul>
+                            <li>Integration of additional sequence analysis tools</li>
+                            <li>Customizable search parameters (length, spacer size)</li>
+                            <li>Easy adaptation for educational or research use cases</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Identifies both standard palindromes and spacer palindromes (with intervening sequences).</li>
+                    <li>Configurable minimum palindrome length and maximum spacer length.</li>
+                    <li>Supports both manual sequence entry and FASTA file upload.</li>
+                    <li>Ensures clean and biologically meaningful input before analysis.</li>
+                    <li>Comprehensive results presentation with positional information.</li>
+                    <li>Persistent query history for result retrieval.</li>
+                    <li>Minimal setup required; easily adaptable for educational environments or small-scale bioinformatics projects.</li>
+                </ul>
+                
+                <h3>Technologies Used</h3>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">CGI</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Apache HTTP Server</span>
+                </div>
+                
+                <h3>Technical Implementation</h3>
+                <div class="implementation-details">
+                    <div class="detail-item">
+                        <h4>Front-End Interface</h4>
+                        <p>Simple and intuitive web interface using HTML, featuring:</p>
+                        <ul>
+                            <li>Text area for DNA sequence input</li>
+                            <li>Real-time input validation via JavaScript</li>
+                            <li>Submit/reset buttons for seamless user interaction</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Back-End Logic</h4>
+                        <p>Powered by Python scripts (CGI or Flask) responsible for:</p>
+                        <ul>
+                            <li>Parsing and cleaning user-submitted DNA data</li>
+                            <li>Running palindrome detection algorithms</li>
+                            <li>Generating structured output for the results page</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Result Display Page</h4>
+                        <p>Results are dynamically rendered with:</p>
+                        <ul>
+                            <li>List of detected palindromic sequences</li>
+                            <li>Start and end positions in the original input</li>
+                            <li>Optional biological annotations or interpretations</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Error Handling Module</h4>
+                        <p>Graceful handling of invalid or malformed inputs through:</p>
+                        <ul>
+                            <li>Clear error messages for non-DNA characters</li>
+                            <li>Feedback for empty fields or incorrect formats</li>
+                            <li>Safe fallback behavior to prevent system crashes</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Query Tracking and Session Management</h4>
+                        <p>Each user submission is assigned a unique query number, enabling:</p>
+                        <ul>
+                            <li>Randomized query ID generation using random module</li>
+                            <li>Server-side storage of user queries and results for future retrieval</li>
+                            <li>Query lookup feature allowing users to revisit and view past results</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-images">
+                    <img src="images/Querypage.png" alt="Query interface">
+                    <img src="images/Resultspage.png" alt="Result interface">
+                    <img src="images/HistoryQuery.png" alt="HistoryQuery interface">
+                    <img src="images/HistoryResult.png" alt="HistoryResult interface">
+                    <img src="images/QueryFormatError.png" alt="Format error interface">
+                </div>
+
+                <h3>Group member</h3>
+                <p>Wu Zehua<br>Sun Weijie<br>Irfan Ahmed
+                </p>
+                
+                <a href="index.html#projects" class="button back-button">← Back to Projects</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Jia Hao Ng. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
