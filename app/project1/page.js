@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import '../styles/globals.css';
 config.autoAddCss = false;
 
 export default function Project1() {
