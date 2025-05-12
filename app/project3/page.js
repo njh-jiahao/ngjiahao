@@ -1,12 +1,14 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-
-export const viewport = 'width=device-width, initial-scale=1';
-
-export const metadata = {
-  title: 'Palindromic Sequence Analysis | Jia Hao Ng',
-};
+import type { Viewport } from 'next';
+ 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
 
 export default function Project3() {
   return (
@@ -14,6 +16,10 @@ export default function Project3() {
       <Head>
         <title>Palindromic Sequence Analysis | Jia Hao Ng</title>
         <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
         <link rel="icon" type="image/png" href="/images/DP.png" />
         <link rel="apple-touch-icon" href="/images/DP.png" />
         <link rel="icon" sizes="192x192" href="/images/DP.png" />
