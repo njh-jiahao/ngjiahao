@@ -18,10 +18,6 @@ export default function Project2() {
       <Head>
         <title>GenPharmPro | Jia Hao Ng</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        />
         <link rel="icon" type="image/png" href="/images/DP.png" />
         <link rel="apple-touch-icon" href="/images/DP.png" />
         <link rel="icon" sizes="192x192" href="/images/DP.png" />
