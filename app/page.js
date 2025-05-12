@@ -14,9 +14,8 @@ export default function Home() {
     <>
       <Head>
         <title>Jia Hao Ng | Bioinformatics & Data Science</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
         <link rel="icon" type="image/png" href="/images/DP.png" />
         <link rel="apple-touch-icon" href="/images/DP.png" />
         <link rel="icon" sizes="192x192" href="/images/DP.png" />
@@ -116,7 +115,7 @@ export default function Home() {
             </div>
             <p className="education-institution">Universiti Malaya, Kuala Lumpur, Malaysia</p>
             <div className="education-details">
-              <p>Thesis: "Automated Cardiovascular Disease Detection Using Deep Learning Segmentation of PLAX View Echocardiography and Multi-Variable LSTM Analysis"</p>
+              <p>Thesis: &quot;Automated Cardiovascular Disease Detection Using Deep Learning Segmentation of PLAX View Echocardiography and Multi-Variable LSTM Analysis&quot;</p>
               <p>Utilized U-Net model for echocardiographic segmentation and developed LSTM model for disease classification</p>
               <p>Developed Python and R programming skills, along with tools like GROMACS, Chimera, and VMD</p>
               <p>Created web pages to host projects, built databases & systems with MySQL, PHP & HTML</p>
@@ -130,7 +129,7 @@ export default function Home() {
             </div>
             <p className="education-institution">University of Nottingham, Semenyih, Malaysia & Nottingham, UK</p>
             <div className="education-details">
-              <p>Thesis: "Micronutrients (Vitamin C and Zinc) and their impact on DNA damage - a literature review"</p>
+              <p>Thesis: &quot;Micronutrients (Vitamin C and Zinc) and their impact on DNA damage - a literature review&quot;</p>
               <p>Excelled academically and received exchange opportunity to University of Nottingham UK</p>
               <p>Explored health issues and solutions via pharmacology and lifestyle interventions</p>
               <p>Active Music Society member and volunteer</p>
@@ -144,7 +143,7 @@ export default function Home() {
           <div className="experience-item">
             <div className="experience-header">
               <h3>Research Assistant (Part-time)</h3>
-              <span className="experience-date">March 2025 - Current</span>
+              <span className="experience-date">Sep 2023 - Current</span>
             </div>
             <p className="experience-company">University of Nottingham, Semenyih, Malaysia</p>
             <div className="experience-details">
