@@ -20,7 +20,6 @@ export default function Home() {
     <>
       <Head>
         <title>Jia Hao Ng | Bioinformatics & Data Science</title>
-        <meta charSet="UTF-8" />
         <link rel="icon" type="image/png" href="/images/DP.png" />
         <link rel="apple-touch-icon" href="/images/DP.png" />
         <link rel="icon" sizes="192x192" href="/images/DP.png" />
