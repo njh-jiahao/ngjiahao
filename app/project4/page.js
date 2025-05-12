@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
 
-export const viewport = 'width=device-width, initial-scale=1';
+// export const viewport = 'width=device-width, initial-scale=1';
 
-export const metadata = {
-  title: 'Protein Structure Prediction & Docking | Jia Hao Ng',
-};
+//export const metadata = {
+//  title: 'Protein Structure Prediction & Docking | Jia Hao Ng',
+//};
 
 export default function Project4() {
   useEffect(() => {
@@ -42,6 +42,7 @@ export default function Project4() {
       <Head>
         <title>Protein Structure Prediction & Docking | Jia Hao Ng</title>
         <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="/images/DP.png" />
         <link rel="apple-touch-icon" href="/images/DP.png" />
         <link rel="icon" sizes="192x192" href="/images/DP.png" />
