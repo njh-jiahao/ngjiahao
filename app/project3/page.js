@@ -2,13 +2,18 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
+export const viewport = 'width=device-width, initial-scale=1';
+
+export const metadata = {
+  title: 'Palindromic Sequence Analysis | Jia Hao Ng',
+};
+
 export default function Project3() {
   return (
     <div className="container">
       <Head>
         <title>Palindromic Sequence Analysis | Jia Hao Ng</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
         <link rel="icon" type="image/png" href="/images/DP.png" />
         <link rel="apple-touch-icon" href="/images/DP.png" />
         <link rel="icon" sizes="192x192" href="/images/DP.png" />

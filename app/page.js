@@ -8,13 +8,19 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
+export const viewport = 'width=device-width, initial-scale=1';
+
+export const metadata = {
+  title: 'Jia Hao Ng',
+  description: 'Bioinformatics & Data Science'
+};
+
 export default function Home() {
   return (
     <>
       <Head>
         <title>Jia Hao Ng | Bioinformatics & Data Science</title>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="/images/DP.png" />
         <link rel="apple-touch-icon" href="/images/DP.png" />
         <link rel="icon" sizes="192x192" href="/images/DP.png" />
