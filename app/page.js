@@ -15,16 +15,18 @@ export const viewport = {
   userScalable: true
 }
 
+export const metadata = {
+  title: 'Jia Hao Ng | Bioinformatics & Data Science',
+  icons: {
+    icon: '/images/DP.png',
+    apple: '/images/DP.png',
+    shortcut: '/images/DP.png',
+  },
+}
+
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Jia Hao Ng | Bioinformatics & Data Science</title>
-        <link rel="icon" type="image/png" href="/images/DP.png" />
-        <link rel="apple-touch-icon" href="/images/DP.png" />
-        <link rel="icon" sizes="192x192" href="/images/DP.png" />
-      </Head>
-
       <div className="container">
         <header>
           <div className="header-content">
@@ -71,7 +73,7 @@ export default function Home() {
           <h2>Projects</h2>
           
           <div className="project-grid">
-            <Link href="/project1">
+            <Link href="/project1" prefetch>
               <div className="project-card">
                 <h3>Automated CVD Detection Using Deep Learning Segmentation of PLAX view Echocardiography & Multi-variable LSTM Analysis</h3>
                 <p className="project-meta">Thesis (MSc Bioinformatics)</p>
@@ -80,7 +82,7 @@ export default function Home() {
               </div>
             </Link>
             
-            <Link href="/project2">
+            <Link href="/project2" prefetch>
               <div className="project-card">
                 <h3>GenPharmPro: A Relational Database for Drug-Disease-Target Interactions</h3>
                 <p className="project-meta">Academic Project</p>
@@ -89,7 +91,7 @@ export default function Home() {
               </div>
             </Link>
             
-            <Link href="/project3">
+            <Link href="/project3" prefetch>
               <div className="project-card">
                 <h3>Online System for Bioinformatics Data & Knowledge Sharing</h3>
                 <p className="project-meta">Web System</p>
@@ -98,7 +100,7 @@ export default function Home() {
               </div>
             </Link>
             
-            <Link href="/project4">
+            <Link href="/project4" prefetch>
               <div className="project-card">
                 <h3>Protein Structure Prediction & Molecular Docking Analysis</h3>
                 <p className="project-meta">Academic Project</p>

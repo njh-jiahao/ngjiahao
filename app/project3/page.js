@@ -9,16 +9,18 @@ export const viewport = {
   userScalable: true
 }
 
+export const metadata = {
+  title: 'Palindromic Sequence Analysis | Jia Hao Ng',
+  icons: {
+    icon: '/images/DP.png',
+    apple: '/images/DP.png',
+    shortcut: '/images/DP.png',
+  },
+}
+
 export default function Project3() {
   return (
     <div className="container">
-      <Head>
-        <title>Palindromic Sequence Analysis | Jia Hao Ng</title>
-        <link rel="icon" type="image/png" href="/images/DP.png" />
-        <link rel="apple-touch-icon" href="/images/DP.png" />
-        <link rel="icon" sizes="192x192" href="/images/DP.png" />
-      </Head>
-
       <header>
         <div className="header-content">
           <Image 

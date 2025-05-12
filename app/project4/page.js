@@ -9,8 +9,12 @@ export const viewport = {
 
 export const metadata = {
   title: 'Protein Structure Prediction & Docking | Jia Hao Ng',
-  description: 'Bioinformatics project using Modeller, GROMACS and AutoDock',
-};
+  icons: {
+    icon: '/images/DP.png',
+    apple: '/images/DP.png',
+    shortcut: '/images/DP.png',
+  },
+}
 
 export default function Project4Page() {
   return <IntPage />;

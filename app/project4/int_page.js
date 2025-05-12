@@ -28,13 +28,6 @@ export default function Project4Client() {
 
   return (
     <div className="container">
-      <Head>
-        <title>Protein Structure Prediction & Docking | Jia Hao Ng</title>
-        <link rel="icon" type="image/png" href="/images/DP.png" />
-        <link rel="apple-touch-icon" href="/images/DP.png" />
-        <link rel="icon" sizes="192x192" href="/images/DP.png" />
-      </Head>
-
       <div className="container">
         <header>
           <div className="header-content">
