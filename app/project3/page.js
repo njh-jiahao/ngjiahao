@@ -1,24 +1,30 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+ 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: true
+}
+
+export const metadata = {
+  title: 'Palindromic Sequence Analysis | Jia Hao Ng',
+  icons: {
+    icon: '/images/DP.png',
+    apple: '/images/DP.png',
+    shortcut: '/images/DP.png',
+  },
+}
 
 export default function Project3() {
   return (
     <div className="container">
-      <Head>
-        <title>Palindromic Sequence Analysis | Jia Hao Ng</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-        <link rel="icon" type="image/png" href="/images/DP.png" />
-        <link rel="apple-touch-icon" href="/images/DP.png" />
-        <link rel="icon" sizes="192x192" href="/images/DP.png" />
-      </Head>
-
       <header>
         <div className="header-content">
           <Image 
-            src="/images/DP.JPG" 
+            src="/images/DP.png" 
             alt="Jia Hao Ng" 
             className="profile-pic"
             width={100}

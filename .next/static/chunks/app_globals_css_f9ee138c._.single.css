@@ -1,23 +1,24 @@
+/* [project]/app/globals.css [app-client] (css) */
 :root {
   --primary-color: #333;
   --secondary-color: #666;
-  --accent-color: #04A1C8;
-  --light-gray: #EFE9E6;
-  --white: #F9F3F1;
-  --transition: all 0.3s ease;
+  --accent-color: #04a1c8;
+  --light-gray: #efe9e6;
+  --white: #f9f3f1;
+  --transition: all .3s ease;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.6;
   color: var(--primary-color);
   background-color: var(--white);
+  font-family: Helvetica Neue, Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .container {
@@ -28,20 +29,20 @@ body {
 
 header {
   text-align: center;
+  border-bottom: 2px solid var(--light-gray);
   margin-bottom: 3rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid var(--light-gray);
 }
 
 h1 {
+  margin-bottom: .5rem;
   font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
 header h1 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 header h1 a:hover {
@@ -49,25 +50,25 @@ header h1 a:hover {
 }
 
 .subtitle {
-  font-size: 1.2rem;
   color: var(--secondary-color);
   margin-bottom: 1.5rem;
+  font-size: 1.2rem;
 }
 
 nav {
-  display: flex;
+  border-top: 2px solid var(--light-gray);
   justify-content: center;
   gap: 1.5rem;
   margin-top: 1.5rem;
-  border-top: 2px solid var(--light-gray);
-  padding-top: 0.9rem;
+  padding-top: .9rem;
+  display: flex;
 }
 
 nav a {
-  text-decoration: none;
   color: var(--primary-color);
-  font-weight: 500;
   transition: var(--transition);
+  font-weight: 500;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -79,56 +80,56 @@ section {
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--light-gray);
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  font-size: 1.8rem;
 }
 
 h3 {
+  margin-bottom: .5rem;
   font-size: 1.3rem;
-  margin-bottom: 0.5rem;
 }
 
 p {
-  margin-bottom: 1rem;
   color: var(--secondary-color);
+  margin-bottom: 1rem;
 }
 
 .project-grid, .system-components, .implementation-details, .findings {
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
+  display: grid;
 }
 
 .project-card {
   background-color: var(--light-gray);
-  padding: 1.5rem;
-  border-radius: 5px;
   transition: var(--transition);
   cursor: pointer;
-  text-decoration: none;
   color: inherit;
-  display: block;          /* Make card a flex container */
-  flex-direction: column; /* Stack children vertically */
-  min-height: 350px;      /* Set a fixed minimum height */
+  border-radius: 5px;
+  flex-direction: column;
+  min-height: 350px;
+  padding: 1.5rem;
+  text-decoration: none;
+  display: block;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-decoration: none;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px #0000001a;
 }
 
 .project-grid a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px #0000001a;
 }
 
 .project-grid a:visited {
@@ -136,34 +137,34 @@ p {
 }
 
 .project-meta {
-  font-size: 0.9rem;
   color: var(--accent-color);
-  margin-bottom: 0.8rem;
+  margin-bottom: .8rem;
+  font-size: .9rem;
   font-style: italic;
 }
 
 .read-more {
   color: var(--accent-color);
+  margin-top: auto;
   font-weight: 500;
   display: inline-block;
-  margin-top: auto; /* Auto margin pushes it down */
-} 
+}
 
 .button {
-  display: inline-block;
   background-color: var(--accent-color);
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  text-decoration: none;
+  color: #fff;
   transition: var(--transition);
+  border-radius: 5px;
   margin-top: 1rem;
+  padding: .6rem 1.2rem;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .button:hover {
-  background-color: transparent;
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
+  background-color: #0000;
   transform: scale(1.02);
 }
 
@@ -181,27 +182,27 @@ p {
 }
 
 .skills ul, .component ul {
-  list-style-type: none;
-  display: block;
   margin-left: 0;
   padding-left: 0;
+  list-style-type: none;
+  display: block;
 }
 
 .component {
   background-color: var(--light-gray);
-  padding: 1.2rem;
   border-radius: 5px;
+  padding: 1.2rem;
 }
 
 .component h4 {
   color: var(--accent-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .skills li, .component li {
-  margin-bottom: 0.3rem;
-  position: relative;
+  margin-bottom: .3rem;
   padding-left: 1rem;
+  position: relative;
 }
 
 .skills li:before, .component li:before {
@@ -216,22 +217,22 @@ p {
 }
 
 .contact-info p {
-  margin-bottom: 0.8rem;
-  display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: .5rem;
+  margin-bottom: .8rem;
+  display: flex;
 }
 
 .social-links {
-  display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
+  display: flex;
 }
 
 .social-links a {
   color: var(--primary-color);
-  font-size: 1.5rem;
   transition: var(--transition);
+  font-size: 1.5rem;
 }
 
 .social-links a:hover {
@@ -240,11 +241,11 @@ p {
 
 footer {
   text-align: center;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
   border-top: 2px solid var(--light-gray);
   color: var(--secondary-color);
-  font-size: 0.9rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  font-size: .9rem;
 }
 
 .project-detail {
@@ -258,46 +259,46 @@ footer {
 
 .project-content h3 {
   margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: .8rem;
 }
 
 .project-content ul {
-  margin-left: 1.5rem;
   margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .tech-tags {
-  display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: .5rem;
   margin-bottom: 1.5rem;
+  display: flex;
 }
 
 .tag {
   background-color: var(--light-gray);
-  padding: 0.3rem 0.8rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  padding: .3rem .8rem;
+  font-size: .9rem;
 }
 
 .project-images {
+  gap: 1rem;
   margin: 2rem 0;
   display: grid;
-  gap: 1rem;
 }
 
 .project-images img {
+  border-radius: 5px;
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px #0000001a;
 }
 
 .back-button {
+  align-items: center;
+  gap: .5rem;
   margin-top: 2rem;
   display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 #education, #experience {
@@ -309,27 +310,27 @@ footer {
 }
 
 .education-header {
-  display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.3rem;
+  margin-bottom: .3rem;
+  display: flex;
 }
 
 .education-date {
   color: var(--secondary-color);
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 .education-institution {
-  font-style: italic;
-  margin-bottom: 0.8rem;
   color: var(--secondary-color);
+  margin-bottom: .8rem;
+  font-style: italic;
 }
 
 .education-details p {
-  margin-bottom: 0.5rem;
-  position: relative;
+  margin-bottom: .5rem;
   padding-left: 0;
+  position: relative;
 }
 
 .education-details p:not(:first-child) {
@@ -338,9 +339,9 @@ footer {
 
 .education-details p:not(:first-child):before {
   content: "•";
+  color: var(--secondary-color);
   position: absolute;
   left: 0;
-  color: var(--secondary-color);
 }
 
 .experience-item {
@@ -348,49 +349,49 @@ footer {
 }
 
 .experience-header {
-  display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.3rem;
+  margin-bottom: .3rem;
+  display: flex;
 }
 
 .experience-date {
   color: var(--secondary-color);
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 .experience-company {
-  font-style: italic;
-  margin-bottom: 0.8rem;
   color: var(--secondary-color);
+  margin-bottom: .8rem;
+  font-style: italic;
 }
 
 .experience-details p {
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 1.2rem;
   color: var(--secondary-color);
+  margin-bottom: .5rem;
+  padding-left: 1.2rem;
+  position: relative;
 }
 
 .experience-details p:before {
   content: "•";
+  color: var(--secondary-color);
   position: absolute;
   left: 0;
-  color: var(--secondary-color);
 }
 
 .header-content {
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   margin-bottom: 1.5rem;
+  display: flex;
 }
 
 .profile-pic {
-  border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--light-gray);
+  border-radius: 50%;
 }
 
 .header-text {
@@ -398,21 +399,19 @@ footer {
 }
 
 .subtitle {
-  font-size: 1.2rem;
   color: var(--secondary-color);
+  font-size: 1.2rem;
 }
-
-
 
 .detail-item {
   background-color: var(--light-gray);
-  padding: 1.2rem;
   border-radius: 5px;
+  padding: 1.2rem;
 }
 
 .detail-item h4 {
   color: var(--accent-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .detail-item ul {
@@ -420,12 +419,11 @@ footer {
 }
 
 .component-point {
-  display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
-  
+  gap: .5rem;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  display: flex;
 }
 
 .component-point:last-child {
@@ -435,17 +433,17 @@ footer {
 }
 
 .component-point img {
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  flex-shrink: 0;
   width: 340px;
   height: auto;
-  border-radius: 5px;
-  border: 1px solid var(--light-gray);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  flex-shrink: 0;
+  box-shadow: 0 2px 5px #0000001a;
 }
 
 .component-point p {
-  margin: 0;
   align-self: center;
+  margin: 0;
 }
 
 .project-phases {
@@ -453,24 +451,23 @@ footer {
 }
 
 .phase {
-  margin-bottom: 3rem;
   border-left: 3px solid var(--accent-color);
+  margin-bottom: 3rem;
   padding-left: 1.5rem;
 }
 
 .phase-header {
-  display: flex;
+  background-color: var(--light-gray);
+  cursor: pointer;
+  width: 100%;
+  transition: var(--transition);
+  border: none;
+  border-radius: 5px;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  background-color: var(--light-gray);
-  border: none;
-  padding: 1rem 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: var(--transition);
-  ;
   margin-bottom: 0;
+  padding: 1rem 1.5rem;
+  display: flex;
 }
 
 .phase-header:hover {
@@ -478,136 +475,132 @@ footer {
 }
 
 .phase-header h3 {
-  margin: 0;
   color: var(--accent-color);
-  font-size: 1.4rem;
   text-align: left;
+  margin: 0;
+  font-size: 1.4rem;
 }
 
 .phase-header i {
   transition: var(--transition);
-  ;
   margin-left: 1rem;
 }
 
 .phase-step {
-  margin-bottom: 2rem;
   background-color: var(--light-gray);
-  padding: 1.2rem;
   border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
 }
 
 .phase-step h4 {
-  margin-bottom: 0.8rem;
   color: var(--primary-color);
+  margin-bottom: .8rem;
 }
 
 .phase-step img {
+  border: 1px solid #ddd;
+  border-radius: 5px;
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
   margin-top: 1rem;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px #0000001a;
 }
 
 .finding {
   background-color: var(--light-gray);
-  padding: 1.2rem;
-  border-radius: 5px;
   text-align: center;
+  border-radius: 5px;
+  padding: 1.2rem;
 }
 
 .finding img {
+  border-radius: 5px;
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
   margin-bottom: 1rem;
 }
 
 .phase-content {
-  padding: 1.5rem;
-  background-color: rgba(239, 233, 230, 0.3);
+  background-color: #efe9e64d;
   border-radius: 0 0 5px 5px;
-  margin-top: 0.5rem;
+  margin-top: .5rem;
+  padding: 1.5rem;
 }
 
 .phase {
-  margin-bottom: 1rem;
   border: none;
+  margin-bottom: 1rem;
   padding-left: 0;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .container {
     padding: 1.5rem;
   }
-  
+
   h1 {
     font-size: 2rem;
   }
-  
+
   .header-content {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .profile-pic {
     width: 80px;
     height: 80px;
   }
-  
+
   .header-text {
     text-align: center;
   }
-  
+
   nav {
     flex-direction: column;
-    gap: 0.5rem;
     align-items: center;
+    gap: .5rem;
   }
-  
-  .project-grid,
-  .skills ul,
-  .findings {
+
+  .project-grid, .skills ul, .findings {
     grid-template-columns: 1fr;
   }
-  
+
   .phase {
     border-left: none;
-    padding-left: 0;
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 1.5rem;
+    padding-left: 0;
   }
-  
+
   .phase-header {
-    padding: 0.8rem 1rem;
+    padding: .8rem 1rem;
   }
-  
+
   .phase-header h3 {
     font-size: 1.2rem;
   }
-  
+
   .component-point {
     flex-direction: column;
   }
-  
+
   .component-point img {
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
   }
 }
 
-@media (max-width: 600px) {
-  /* Timeline items (education/experience) */
-  .education-header,
-  .experience-header {
+@media (width <= 600px) {
+  .education-header, .experience-header {
     flex-direction: column;
     align-items: flex-start;
   }
-  
-  .education-date,
-  .experience-date {
-    margin-top: 0.3rem;
+
+  .education-date, .experience-date {
+    margin-top: .3rem;
   }
 }
+
+/*# sourceMappingURL=app_globals_css_f9ee138c._.single.css.map*/

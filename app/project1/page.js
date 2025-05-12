@@ -5,24 +5,29 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: true
+}
+
+export const metadata = {
+  title: 'Automated Cardiovascular Disease Detection | Jia Hao Ng',
+  icons: {
+    icon: '/images/DP.png',
+    apple: '/images/DP.png',
+    shortcut: '/images/DP.png',
+  },
+}
+
 export default function Project1() {
   return (
     <div className="container">
-      <Head>
-        <title>Automated Cardiovascular Disease Detection | Jia Hao Ng</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-        <link rel="icon" type="image/png" href="/images/DP.png" />
-        <link rel="apple-touch-icon" href="/images/DP.png" />
-        <link rel="icon" sizes="192x192" href="/images/DP.png" />
-      </Head>
-
       <header>
         <div className="header-content">
           <Image 
-            src="/images/DP.JPG" 
+            src="/images/DP.png" 
             alt="Jia Hao Ng" 
             className="profile-pic" 
             width={100}
@@ -54,7 +59,7 @@ export default function Project1() {
             height={500}
           />
           <h3>Overview</h3>
-          <p>This project focused on developing an AI-assisted diagnostic tool for cardiovascular disease (CVD) using echocardiographic imaging. By utilising deep learning techniques, the tool segmented the heart's left ventricle from PLAX (Parasternal Long Axis) view echocardiography videos and analysed the motion and structural features using multivariable LSTM-based time-series classification. The objective was to improve the accuracy and efficiency of automated cardiac diagnostics, especially in clinical environments with limited expert availability.
+          <p>This project focused on developing an AI-assisted diagnostic tool for cardiovascular disease (CVD) using echocardiographic imaging. By utilising deep learning techniques, the tool segmented the heart&apos;s left ventricle from PLAX (Parasternal Long Axis) view echocardiography videos and analysed the motion and structural features using multivariable LSTM-based time-series classification. The objective was to improve the accuracy and efficiency of automated cardiac diagnostics, especially in clinical environments with limited expert availability.
               <br /><br />The approach combined medical image segmentation and temporal analysis of heart function to generate a predictive model for CVD classification, contributing to the broader aim of accessible and scalable cardiac screening.</p>
           
           <h3>Methodologies</h3>
@@ -85,7 +90,7 @@ export default function Project1() {
           
           <h3>Results</h3>
           <p>Using 5-fold cross-validation, the model demonstrated strong performance in detecting Aortic Stenosis (AS), achieving an average precision, recall, F1-score, and accuracy of approximately 0.80. For Left Ventricular Hypertrophy (LVH) classification, performance was slightly lower, with both precision and accuracy averaging around 0.78.
-              <br />These results highlight the model's effectiveness in identifying major cardiovascular abnormalities from echocardiographic motion features.</p>
+              <br />These results highlight the model&apos;s effectiveness in identifying major cardiovascular abnormalities from echocardiographic motion features.</p>
 
           <div className="project-images">
             <Image 
@@ -108,7 +113,7 @@ export default function Project1() {
           <ul>
             <li>No detailed quantitative analysis (e.g., Dice score, IoU) was conducted to evaluate segmentation performance.</li>
             <li>The LSTM classifier was only designed for binary classification (CVD vs. non-CVD). It does not distinguish between specific types or severities of cardiovascular conditions, which could limit its clinical utility in nuanced diagnoses.</li>
-            <li>Certain advanced analyses such as SHAP (SHapley Additive exPlanations) for model interpretability were not performed. This reduced the project's ability to explore explainability aspects in depth.</li>
+            <li>Certain advanced analyses such as SHAP (SHapley Additive exPlanations) for model interpretability were not performed. This reduced the project&apos;s ability to explore explainability aspects in depth.</li>
           </ul>
 
           <h3>Future Directions</h3>
