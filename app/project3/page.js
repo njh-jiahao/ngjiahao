@@ -1,13 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import type { Viewport } from 'next';
  
-export const viewport: Viewport = {
+export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false,
+  userScalable: true
 }
 
 export default function Project3() {

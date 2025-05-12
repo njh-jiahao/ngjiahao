@@ -4,13 +4,12 @@ import Link from 'next/link';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
-import type { Viewport } from 'next';
- 
-export const viewport: Viewport = {
+
+export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false,
+  userScalable: true
 }
 
 export default function Project2() {

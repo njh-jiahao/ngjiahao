@@ -3,13 +3,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import type { Viewport } from 'next';
  
-export const viewport: Viewport = {
+export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false,
+  userScalable: true
 }
 
 export default function Project4() {
@@ -44,10 +43,6 @@ export default function Project4() {
       <Head>
         <title>Protein Structure Prediction & Docking | Jia Hao Ng</title>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        />
         <link rel="icon" type="image/png" href="/images/DP.png" />
         <link rel="apple-touch-icon" href="/images/DP.png" />
         <link rel="icon" sizes="192x192" href="/images/DP.png" />
