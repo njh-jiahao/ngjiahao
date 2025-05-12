@@ -222,6 +222,18 @@ p {
   gap: 0.5rem;
 }
 
+.contact-info a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition) ;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
