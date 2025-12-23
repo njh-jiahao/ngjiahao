@@ -122,7 +122,7 @@ export default function Home() {
             <p className="education-institution">Universiti Malaya, Kuala Lumpur, Malaysia</p>
             <div className="education-details">
               <p>Thesis: &quot;Automated Cardiovascular Disease Detection Using Deep Learning Segmentation of PLAX View Echocardiography and Multi-Variable LSTM Analysis&quot;</p>
-              <p>Utilized U-Net model for echocardiographic segmentation and developed LSTM model for disease classification</p>
+              <p>Utilized DeepLabv3 model for echocardiographic segmentation and developed LSTM model for disease classification</p>
               <p>Developed Python and R programming skills, along with tools like GROMACS, Chimera, and VMD</p>
               <p>Created web pages to host projects, built databases & systems with MySQL, PHP & HTML</p>
             </div>
