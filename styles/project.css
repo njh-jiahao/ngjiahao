@@ -33,6 +33,13 @@
   margin-bottom: 1.1rem;
 }
 
+.project-section ul {
+  list-style-type: none;
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .project-section li {
   margin-bottom: 0.3rem;
   position: relative;
