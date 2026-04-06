@@ -106,3 +106,9 @@
   color: #ffffff;
   font-size: 1.05rem;
 }
+
+.project-cta-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
