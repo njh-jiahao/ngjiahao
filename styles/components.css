@@ -73,6 +73,49 @@ nav a:hover {
   gap: 0.5rem;
 }
 
+#education, #experience {
+  margin-bottom: 3rem;
+}
+
+.education-item {
+  margin-bottom: 2rem;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.education-date {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.education-institution {
+  font-style: italic;
+  margin-bottom: 0.8rem;
+  color: var(--secondary-color);
+}
+
+.education-details p {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 0;
+}
+
+.education-details p:not(:first-child) {
+  padding-left: 1.2rem;
+}
+
+.education-details p:not(:first-child):before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
+
 .project-grid, .system-components, .implementation-details, .findings {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
