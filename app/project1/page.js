@@ -211,7 +211,6 @@ export default function Project1() {
             </div>
             <div className="project-cta-buttons">
               <Link href="/#contact" className="button">Get in touch →</Link>
-              <br>
               <Link href="/#projects" className="button back-button">← Back to Projects</Link>
             </div>
           </div>
