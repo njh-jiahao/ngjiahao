@@ -62,14 +62,6 @@
   margin-bottom: 0.3rem;
 }
 
-.project-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  margin: 1.25rem 0 0.4rem;
-}
-
 .img-caption {
   font-size: 0.78rem;
   color: var(--mid-grey);
