@@ -90,7 +90,7 @@
 }
 
 .project-cta {
-  background: var(--blue);
+  background: #9EC4E6;
   border-radius: 12px;
   padding: 2rem;
   display: flex;
@@ -104,6 +104,12 @@
 .project-cta-text strong {
   display: block;
   color: #ffffff;
+  font-size: 1.05rem;
+}
+
+.project-cta-text p {
+  display: block;
+  color: var(--white);
   font-size: 1.05rem;
 }
 
