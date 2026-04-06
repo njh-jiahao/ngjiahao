@@ -72,7 +72,6 @@ export default function Home() {
           </div>
           
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <a href="/CV_NJH.pdf" className="button" download>📄 Download CV (PDF)</a>
             <a href="#contact" className="button" style={{ background: 'var(--navy)' }}>📬 Contact Me</a>
           </div>
         </section>
@@ -233,9 +232,7 @@ export default function Home() {
           </div>
           
           <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
-            <a href="/CV_NJH.pdf" className="button" download style={{ background: 'var(--teal)' }}>
-              📄 Download Full CV (PDF)
-            </a>
+            <a href="/CV_NJH.pdf" className="button" download>📄 Download Full CV (PDF)</a>
           </div>
         </section>
 
