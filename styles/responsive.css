@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .project-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .education-header,
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-date,
+  .experience-date {
+    margin-top: 0.3rem;
+  }
+}
