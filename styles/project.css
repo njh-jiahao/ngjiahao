@@ -90,7 +90,7 @@
 }
 
 .project-cta {
-  background: var(--pale-blue);
+  background: var(--blue);
   border-radius: 12px;
   padding: 2rem;
   display: flex;
@@ -116,10 +116,6 @@
 .project-cta-buttons .button {
   margin-top: 0;
   white-space: nowrap;
-}
-
-.project-cta-buttons a:last-child {
-  margin-left: auto;
 }
 
 .project-cta-buttons a:last-child {
