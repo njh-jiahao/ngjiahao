@@ -16,7 +16,7 @@ export const viewport = {
 
 export const metadata = {
   title: 'Jia Hao Ng | Bioinformatics & Clinical Research',
-  description: 'MSc Bioinformatics graduate with expertise in clinical AI, medical imaging, and research coordination. Open to bioinformatics, health data, and clinical research roles.',
+  description: 'MSc Bioinformatics graduate with expertise in clinical AI, medical imaging, and research coordination.',
   icons: {
     icon: '/images/DP.png',
     apple: '/images/DP.png',
@@ -200,7 +200,7 @@ export default function Home() {
           <div className="education-item">
             <div className="education-header">
               <h3>BSc (Hons) Nutrition</h3>
-              <span className="education-date">Sep 2016 – Jul 2019</span>
+              <span className="experience-date">Sep 2016 – Jul 2019</span>
             </div>
             <p className="education-institution">University of Nottingham, Semenyih, Malaysia & Nottingham, UK</p>
             <div className="education-details">
@@ -221,13 +221,13 @@ export default function Home() {
           </div>
 
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/jia-hao-ng-813237160" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/jia-hao-ng-813237160" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://github.com/njh-jiahao" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/njh-jiahao" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://x.com/ng_jia_hao" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+            <a href="https://x.com/ng_jia_hao" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </div>
