@@ -82,8 +82,8 @@ export default function Project1() {
             <Image
               src="/images/SegEcho.png"
               alt="Segmented echocardiography frame showing left ventricle isolation"
-              width={760}
-              height={420}
+              width={500}
+              height={500}
               className="project-img"
             />
             <p className="img-caption">Segmented PLAX echocardiography frame — left ventricle region isolated by DeepLabv3</p>
@@ -120,16 +120,16 @@ export default function Project1() {
               <Image
                 src="/images/ThAS.png"
                 alt="Classification results for Aortic Stenosis vs Control"
-                width={700}
-                height={400}
+                width={600}
+                height={360}
                 className="project-img"
               />
               <p className="img-caption">Aortic Stenosis (AS) vs. Control — classification performance</p>
               <Image
                 src="/images/ThLVH.png"
                 alt="Classification results for Left Ventricular Hypertrophy vs Control"
-                width={700}
-                height={400}
+                width={600}
+                height={360}
                 className="project-img"
               />
               <p className="img-caption">LVH vs. Control — classification performance</p>
@@ -141,26 +141,22 @@ export default function Project1() {
             <Image
               src="/images/ThMethod.png"
               alt="Pipeline diagram showing segmentation and LSTM classification stages"
-              width={700}
-              height={420}
+              width={600}
+              height={360}
               className="project-img"
             />
             <p className="img-caption">End-to-end pipeline: PLAX video input → segmentation → feature extraction → LSTM classification</p>
             <div className="method-steps">
               <div className="method-step">
-                <span className="step-num">1</span>
                 <p className="step-text"><strong>Segmentation:</strong> DeepLabv3 was used to segment the left ventricle region from individual PLAX echocardiography frames, providing a clean anatomical boundary for downstream feature extraction.</p>
               </div>
               <div className="method-step">
-                <span className="step-num">2</span>
                 <p className="step-text"><strong>Feature extraction:</strong> Motion-based cardiac features were derived from the segmented frames, capturing temporal changes in ventricular shape and movement across the cardiac cycle.</p>
               </div>
               <div className="method-step">
-                <span className="step-num">3</span>
                 <p className="step-text"><strong>Preprocessing:</strong> A curated dataset of echocardiogram videos was used. Missing frames were interpolated to ensure consistent temporal feature mapping, and class imbalance was addressed through oversampling.</p>
               </div>
               <div className="method-step">
-                <span className="step-num">4</span>
                 <p className="step-text"><strong>Classification:</strong> Extracted features were passed through a multi-variable LSTM model trained to detect abnormal cardiac patterns, evaluated using accuracy, precision, recall, and F1-score under 5-fold cross-validation.</p>
               </div>
             </div>
@@ -176,12 +172,12 @@ export default function Project1() {
           </div>
 
           <div className="project-section">
-            <h3>Honest Limitations</h3>
+            <h3>Limitations</h3>
             <p className="limitations-intro">Every research project has constraints. These are mine — and they point directly to what future work should address.</p>
             <ul className="limitations-list">
               <li>Segmentation was not quantitatively evaluated using standard metrics such as Dice score or IoU, which would provide a more rigorous assessment of anatomical precision.</li>
               <li>The LSTM classifier was designed for binary classification only (CVD vs. non-CVD per subtype). It does not distinguish between specific severities or mixed presentations, limiting clinical utility in nuanced cases.</li>
-              <li>Model interpretability techniques such as SHAP or Grad-CAM were not applied, reducing the ability to explain predictions to clinicians — a meaningful limitation for clinical trust and adoption.</li>
+              <li>Model interpretability techniques such as SHAP or Grad-CAM were not applied, thus reducing the ability to explain predictions to clinicians.</li>
             </ul>
           </div>
 
