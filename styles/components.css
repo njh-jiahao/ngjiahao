@@ -1,0 +1,152 @@
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--light-gray);
+}
+
+.header-text {
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 2px solid var(--light-gray);
+  padding-top: 0.9rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: var(--transition);
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  transform: scale(1.02);
+}
+
+.back-button {
+  margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-card {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 5px;
+  transition: var(--transition);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  min-height: 350px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background-color: var(--light-gray);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.badge-navy {
+  background: var(--ice-blue);
+  color: var(--navy);
+}
+
+.badge-blue {
+  background: var(--pale-blue);
+  color: #0d3a5e;
+}
+
+.badge-teal {
+  background: var(--teal-light);
+  color: #0e5234;
+}
+
+/* Social & Contact */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+.contact-info {
+  margin: 1.5rem 0;
+}
+
+.contact-info p {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
