@@ -33,6 +33,19 @@
   margin-bottom: 1.1rem;
 }
 
+.project-section li {
+  margin-bottom: 0.3rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.project-section li:before, .component li:before {
+  content: "•";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
 .problem-block {
   background: var(--cloud);
   border-left: 3px solid var(--blue);
