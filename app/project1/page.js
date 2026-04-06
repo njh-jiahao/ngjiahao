@@ -186,19 +186,19 @@ export default function Project1() {
             <p className="future-intro">These directions reflect where clinical AI for cardiac screening is heading — and where I hope to contribute further.</p>
             <div className="future-grid">
               <div className="future-card">
-                <p className="future-card-title">Multimodal Integration</p>
+                <p className="future-card-title">1. Multimodal Integration</p>
                 <p>Combine echocardiography with ECG signals, blood biomarkers, or clinical metadata to improve prediction robustness across patient populations.</p>
               </div>
               <div className="future-card">
-                <p className="future-card-title">Explainable AI (XAI)</p>
+                <p className="future-card-title">2. Explainable AI (XAI)</p>
                 <p>Apply Grad-CAM or SHAP to visualise model decisions, increasing clinical interpretability and earning cardiologist trust in AI-assisted findings.</p>
               </div>
               <div className="future-card">
-                <p className="future-card-title">Clinical Deployment</p>
+                <p className="future-card-title">3. Clinical Deployment</p>
                 <p>Develop a lightweight web or mobile interface for real-world screening in clinical environments with limited specialist access.</p>
               </div>
               <div className="future-card">
-                <p className="future-card-title">Real-Time Processing</p>
+                <p className="future-card-title">4. Real-Time Processing</p>
                 <p>Optimise the pipeline for real-time video analysis and integration into point-of-care ultrasound systems for bedside use.</p>
               </div>
             </div>
@@ -206,11 +206,11 @@ export default function Project1() {
 
           <div className="project-cta">
             <div className="project-cta-text">
-              <strong>Interested in clinical AI or computational research?</strong>
+              <strong>Working on clinical AI or computational research?</strong>
               <p>I&apos;m open to clinical research, bioinformatics, and health data opportunities globally.</p>
             </div>
             <div className="project-cta-buttons">
-              <Link href="/#contact" className="button">Get in touch →</Link>
+              <Link href="/#contact" className="button">Get in touch →</Link><br>
               <Link href="/#projects" className="button back-button">← Back to Projects</Link>
             </div>
           </div>
