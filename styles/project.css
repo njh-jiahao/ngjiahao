@@ -1,0 +1,245 @@
+.project-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-hero {
+  border-left: 4px solid var(--navy);
+  padding-left: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-hero h2 {
+  font-size: 1.55rem;
+  color: var(--navy);
+  line-height: 1.35;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project-section {
+  margin-bottom: 2.75rem;
+}
+
+.project-section h3 {
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+  border-bottom: 1.5px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+
+.project-section ul {
+  list-style-type: none;
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.project-section li {
+  margin-bottom: 0.3rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.project-section li:before, .component li:before {
+  content: "•";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+.problem-block {
+  background: var(--cloud);
+  border-left: 3px solid var(--blue);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.project-content ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-images {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.project-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-card {
+  background: var(--cloud);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+
+.metric-score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.img-caption {
+  font-size: 0.78rem;
+  color: var(--mid-grey);
+  text-align: center;
+  font-style: italic;
+}
+
+.project-cta {
+  background: #9EC4E6;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.project-cta-text strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+.project-cta-text p {
+  display: block;
+  color: var(--white);
+  font-size: 1.05rem;
+}
+
+.project-cta-buttons {
+  display: flex;
+  justify-content: 'space-between';
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-cta-buttons .button {
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+.project-cta-buttons a:last-child {
+  margin-left: auto;
+}
+
+.project-phases {
+  margin: 2rem 0;
+}
+
+.phase {
+  margin-bottom: 3rem;
+  border-left: 3px solid var(--accent-color);
+  padding-left: 1.5rem;
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--light-gray);
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+  ;
+  margin-bottom: 0;
+}
+
+.phase-header:hover {
+  background-color: #e0e0e0;
+}
+
+.phase-header h3 {
+  margin: 0;
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.phase-header i {
+  transition: var(--transition);
+  ;
+  margin-left: 1rem;
+}
+
+.phase-step {
+  margin-bottom: 2rem;
+  background-color: var(--light-gray);
+  padding: 1.2rem;
+  border-radius: 5px;
+}
+
+.phase-step h4 {
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+}
+
+.phase-step img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.finding {
+  background-color: var(--light-gray);
+  padding: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.finding img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.phase-content {
+  padding: 1.5rem;
+  background-color: rgba(239, 233, 230, 0.3);
+  border-radius: 0 0 5px 5px;
+  margin-top: 0.5rem;
+}
+
+.phase {
+  margin-bottom: 1rem;
+  border: none;
+  padding-left: 0;
+}

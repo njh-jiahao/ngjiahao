@@ -3,6 +3,10 @@ import '../styles/globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 
+export const metadata = {
+  title: 'Jia Hao Ng | Bioinformatics & Clinical Research',
+  description: 'MSc Bioinformatics graduate with expertise in clinical AI and research coordination',
+};
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
