@@ -153,3 +153,93 @@
 .project-cta-buttons a:last-child {
   margin-left: auto;
 }
+
+.project-phases {
+  margin: 2rem 0;
+}
+
+.phase {
+  margin-bottom: 3rem;
+  border-left: 3px solid var(--accent-color);
+  padding-left: 1.5rem;
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--light-gray);
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+  ;
+  margin-bottom: 0;
+}
+
+.phase-header:hover {
+  background-color: #e0e0e0;
+}
+
+.phase-header h3 {
+  margin: 0;
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.phase-header i {
+  transition: var(--transition);
+  ;
+  margin-left: 1rem;
+}
+
+.phase-step {
+  margin-bottom: 2rem;
+  background-color: var(--light-gray);
+  padding: 1.2rem;
+  border-radius: 5px;
+}
+
+.phase-step h4 {
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+}
+
+.phase-step img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.finding {
+  background-color: var(--light-gray);
+  padding: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.finding img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.phase-content {
+  padding: 1.5rem;
+  background-color: rgba(239, 233, 230, 0.3);
+  border-radius: 0 0 5px 5px;
+  margin-top: 0.5rem;
+}
+
+.phase {
+  margin-bottom: 1rem;
+  border: none;
+  padding-left: 0;
+}
