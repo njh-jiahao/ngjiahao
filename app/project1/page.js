@@ -51,9 +51,9 @@ export default function Project1() {
       <main className="project-detail">
 
         <div className="project-hero">
-          <h2>Automated CVD Detection Using Deep Learning Segmentation of PLAX View Echocardiography &amp; Multi-Variable LSTM Analysis</h2>
+          <h2>Automated CVD Detection Using Deep Learning Segmentation of PLAX Echocardiography & Multi-Variable LSTM Analysis</h2>
           <p className="project-hero-sub">
-            An AI pipeline that detects cardiovascular disease from heart ultrasound videos using deep learning — MSc thesis research at Universiti Malaya.
+            An DL-based pipeline developed during my MSc thesis at Universiti Malaya to detect cardiovascular disease from echocardiography videos.
           </p>
           <div className="meta-badges">
             <span className="badge badge-navy">MSc Thesis</span>
@@ -72,7 +72,9 @@ export default function Project1() {
             <h3>The Problem</h3>
             <div className="problem-block">
               <p>
-                Cardiovascular disease is the leading cause of death globally. Early detection through echocardiography is effective, but accurate interpretation requires experienced cardiologists — a resource that is scarce in many clinical settings, particularly in lower-resource environments. This project explored whether deep learning could automate the detection of two major CVD subtypes — Aortic Stenosis and Left Ventricular Hypertrophy — from routine heart ultrasound scans, reducing dependence on specialist availability and enabling more scalable cardiac screening.
+                Cardiovascular disease remains one of the leading causes of death worldwide. Echocardiography is widely used for early detection, but interpreting these scans accurately requires trained cardiologists. In many healthcare settings, especially those with limited resources, access to experienced specialists is not always available.
+                <br>
+                This project investigated whether deep learning models could assist in detecting two major cardiovascular conditions — Aortic Stenosis (AS) and Left Ventricular Hypertrophy (LVH) — from routine echocardiography videos. The goal was to explore how automated analysis could support clinical screening and help identify high-risk cases earlier.
               </p>
             </div>
           </div>
@@ -88,13 +90,19 @@ export default function Project1() {
             />
             <p className="img-caption">Segmented PLAX echocardiography frame — left ventricle region isolated by DeepLabv3</p>
             <p>
-              I developed a two-stage AI diagnostic pipeline. In the first stage, a DeepLabv3 segmentation model isolates the left ventricle from each frame of a PLAX echocardiography video. In the second stage, motion features extracted from the segmented frames are passed through a multi-variable LSTM network that classifies cardiac patterns over time — distinguishing between healthy hearts and those showing signs of Aortic Stenosis or Left Ventricular Hypertrophy.
+              I designed a two-stage deep learning pipeline to analyse echocardiography videos.
             </p>
             <p>
-              Echocardiography videos are inherently noisy and temporally irregular. Missing frames were interpolated to ensure consistent feature mapping across sequences, and oversampling techniques were applied to address class imbalance in the dataset — a common and critical challenge when working with clinical data where abnormal cases are underrepresented.
+              In the first stage, a DeepLabv3 segmentation model was used to isolate the left ventricle from each frame of a parasternal long-axis (PLAX) echocardiography video. This allowed the model to focus on the key anatomical region relevant to cardiac function.
             </p>
             <p>
-              The aim was not to replace cardiologists, but to build a scalable screening tool capable of flagging high-risk cases in clinical environments where specialist review is delayed or unavailable.
+              In the second stage, motion-related features extracted from the segmented frames were passed into a multi-variable LSTM model, which analysed temporal patterns across the cardiac cycle. The model classified sequences as either normal or showing characteristics of Aortic Stenosis or Left Ventricular Hypertrophy.
+            </p>
+            <p>
+              Working with echocardiography videos presented several practical challenges. The videos were often noisy, and some contained missing frames. To address this, missing frames were interpolated to maintain consistent feature sequences. In addition, oversampling techniques were used to handle class imbalance, as abnormal cases were less frequent in the dataset.
+            </p>
+            <p>
+              The intention of this work was not to replace clinical judgement, but to explore how automated tools could support early screening and assist clinicians in prioritising cases.
             </p>
           </div>
 
@@ -114,7 +122,7 @@ export default function Project1() {
             </div>
             <p className="cv-note">Evaluated using 5-fold cross-validation across both classification tasks.</p>
             <p>
-              The model demonstrated strong and consistent performance across both cardiovascular subtypes. Aortic Stenosis detection achieved approximately 0.80 across all four metrics, while Left Ventricular Hypertrophy classification averaged around 0.78 for precision and accuracy. These results confirm the model&apos;s ability to identify major cardiovascular abnormalities from echocardiographic motion features alone, without requiring manual measurement by a clinician.
+              Overall, the model showed stable performance across both classification tasks. Detection of Aortic Stenosis achieved values close to 0.80 across multiple evaluation metrics, while Left Ventricular Hypertrophy classification achieved approximately 0.78 for precision and accuracy. These findings suggest that motion-based features derived from echocardiography videos can be used to identify key indicators of cardiovascular abnormalities without manual measurements.
             </p>
             <div className="project-images">
               <Image
@@ -173,11 +181,11 @@ export default function Project1() {
 
           <div className="project-section">
             <h3>Limitations</h3>
-            <p className="limitations-intro">Every research project has constraints. These are mine — and they point directly to what future work should address.</p>
+            <p className="limitations-intro">Like most research projects, this study had several limitations that could be addressed in future work.</p>
             <ul className="limitations-list">
-              <li>Segmentation was not quantitatively evaluated using standard metrics such as Dice score or IoU, which would provide a more rigorous assessment of anatomical precision.</li>
-              <li>The LSTM classifier was designed for binary classification only (CVD vs. non-CVD per subtype). It does not distinguish between specific severities or mixed presentations, limiting clinical utility in nuanced cases.</li>
-              <li>Model interpretability techniques such as SHAP or Grad-CAM were not applied, thus reducing the ability to explain predictions to clinicians.</li>
+              <li>Segmentation performance was not evaluated using quantitative metrics such as Dice score or Intersection over Union (IoU), which would provide a more objective measure of segmentation accuracy.</li>
+              <li>The LSTM model was trained for binary classification tasks only (disease vs. control). It did not classify disease severity or handle overlapping cardiac conditions, which limits its potential clinical application.</li>
+              <li>Model interpretability methods such as SHAP or Grad-CAM were not included. As a result, the model’s decision-making process was not directly visualised, which may affect clinical trust and adoption.</li>
             </ul>
           </div>
 
