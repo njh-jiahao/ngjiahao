@@ -73,7 +73,8 @@ export default function Project1() {
             <div className="problem-block">
               <p>
                 Cardiovascular disease remains one of the leading causes of death worldwide. Echocardiography is widely used for early detection, but interpreting these scans accurately requires trained cardiologists. In many healthcare settings, especially those with limited resources, access to experienced specialists is not always available.
-                <br>
+              </p>
+              <p>
                 This project investigated whether deep learning models could assist in detecting two major cardiovascular conditions — Aortic Stenosis (AS) and Left Ventricular Hypertrophy (LVH) — from routine echocardiography videos. The goal was to explore how automated analysis could support clinical screening and help identify high-risk cases earlier.
               </p>
             </div>
