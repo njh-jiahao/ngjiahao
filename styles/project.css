@@ -60,6 +60,31 @@
   border-radius: 0 8px 8px 0;
 }
 
+.project-content ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-images {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.project-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
